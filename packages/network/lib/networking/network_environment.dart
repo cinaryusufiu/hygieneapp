@@ -1,0 +1,1 @@
+enum NetworkEnvironment { production, qa }
