@@ -12,6 +12,10 @@ dependencies:
     sdk: flutter
   network:
     path: ../network
+  core:
+    path: ../core
+  authentication_repository:
+    path: ../authentication_repository
 
 dev_dependencies:
   flutter_test:

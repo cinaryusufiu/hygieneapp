@@ -7,17 +7,27 @@ environment:
   sdk: '>=3.1.0 <4.0.0'
 
 dependencies:
-  cupertino_icons: ^1.0.6
-  equatable: ^2.0.5
   flutter:
     sdk: flutter
-
-   # Custom Repository
+  cupertino_icons: ^1.0.6
+  equatable: ^2.0.5
   flutter_bloc: ^8.1.3
+  auto_route: ^7.8.3
+
+  # Custom Repository
   user_repository:
     path: packages/user_repository
+  authentication_repository:
+    path: packages/authentication_repository
   network:
     path: packages/network
+  core:
+    path: packages/core
+  get_it: ^7.6.4
+  formz: ^0.6.1
+  rxdart: ^0.27.7
+  device_info_plus: ^9.1.0
+    
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -25,3 +35,16 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+   - assets/images/
+   - assets/icons/
+  
+  fonts:
+    - family: SF UI
+      fonts:
+        - asset: assets/fonts/SF UI/sf-ui-text-regular.ttf
+    - family: SF Pro
+      fonts:
+        - asset: assets/fonts/SF Pro/SFProDisplay-Semibold.ttf
+          weight: 600
